@@ -1,3 +1,7 @@
+function zoom() {
+    document.body.style.zoom = "80%" 
+}
+
 const mymap = L.map('map').setView([0, 0], 1);
 const issIcon = L.icon({
     iconUrl: 'pngwing.com.png',
@@ -22,7 +26,7 @@ async function getISS() {
         mymap.setView([latitude,longitude],2);
         flag = false;
     } 
-    
+
     document.querySelector('#lat').textContent = latitude.toFixed(2);
     document.querySelector('#lon').textContent = longitude.toFixed(2);
 }
