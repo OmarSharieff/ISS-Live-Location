@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>    
+     
+    <title>WHERE IS ISS?</title>
+</head>
+<body>
+    <div id="container">
+        <div class="heading">
+            <h1>Where the <span>ISS</span> at?<hr></h1>
+        </div>
+        <div id="map"></div>
+        <div class="info">
+            <h2>Latitude:&emsp;<span id="lat"></span>&deg;</h2>
+            <h2>Longitude:&emsp;<span id="lon"></span>&deg;</h2>
+        </div>
+        <div id="footer">
+            <div class="marquee">
+                <p>Website created by Omar Sharieff to demonstrate fetching real-time data using <a href="https://wheretheiss.at/w/developer">where the iss</a> API</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

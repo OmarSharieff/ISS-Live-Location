@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 30, 30);
+}
+
+.heading {
+    padding-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 6vw;
+    color: #fff;
+    margin-top: 2.5vw;
+    font-family: "Poppins", sans-serif;
+}
+
+.heading span {
+    color: #fff;
+    font-size: 6vw;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    /* -webkit-text-stroke: red 3px; */
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: orangered;
+}
+
+#map { 
+    height: 350px; 
+    width: 70%;
+    border: green 5px solid;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.info {
+    display:flex;
+    gap:5vw;
+}
+
+h2 {
+    font-size: 3.5vw;
+    color: #fff;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
+}
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.marquee {
+    width: 100%;
+	line-height: 50px;
+	background-color: orangered;
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
+    display: inline-block;
+    font-size: 20px;
+    font-family: poppins;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-weight: 500;
+}
+.marquee a {
+    color: black;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@media (max-width: 800px) {
+    .heading h1 {
+        font-size: 10vw;
+    }
+    .heading span {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        position: relative;
+        top: -40px;
+    }
+    #map {
+        width: 90%;
+        margin-top: 3vw;
+    }
+    .info {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+    
