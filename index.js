@@ -1,7 +1,3 @@
-function zoom() {
-    document.body.style.zoom = "80%" 
-}
-
 const mymap = L.map('map').setView([0, 0], 1);
 const issIcon = L.icon({
     iconUrl: 'pngwing.com.png',
