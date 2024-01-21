@@ -19,10 +19,6 @@ html,body {
     background-color: rgb(34, 30, 30);
 }
 
-.heading {
-    padding-bottom: 30px;
-}
-
 .heading h1 {
     font-size: 6vw;
     color: #fff;
@@ -36,15 +32,32 @@ html,body {
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-left: 10px;
     /* -webkit-text-stroke: red 3px; */
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     color: orangered;
 }
 
+#notice {
+    margin: 15px 0;
+    background-color: rgb(199, 15, 15);
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'poppins';
+    word-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgb(244, 72, 72);
+    transition: 0.3s ease-in-out all;
+}
+
+#notice:hover {
+    box-shadow: 0px 0px 20px rgb(244, 72, 72);
+}
+
 #map { 
-    height: 280px; 
+    height: 250px; 
     width: 70%;
     border: green 5px solid;
     border-radius: 10px;
@@ -59,7 +72,7 @@ html,body {
 h2 {
     font-size: 3.5vw;
     color: #fff;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: "Poppins", sans-serif;
 }
 #footer {
@@ -105,6 +118,7 @@ h2 {
         margin-top: 20px;
         position: relative;
         top: -40px;
+        line-height: 2px;
     }
     #map {
         width: 90%;
@@ -114,6 +128,10 @@ h2 {
         margin-top: 50px;
         flex-direction: column;
         gap: 10px;
+    }
+    #notice {
+        font-size: 15px;
+        padding: 10px 20px;
     }
 }
     
