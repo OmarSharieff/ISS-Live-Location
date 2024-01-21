@@ -39,7 +39,8 @@ html,body {
 }
 
 #notice {
-    margin: 15px 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
     background-color: rgb(199, 15, 15);
     padding: 10px 30px;
     font-size: 20px;
@@ -57,7 +58,7 @@ html,body {
 }
 
 #map { 
-    height: 250px; 
+    height: 230px; 
     width: 70%;
     border: green 5px solid;
     border-radius: 10px;
@@ -115,10 +116,11 @@ h2 {
     }
     h2 {
         font-size: 30px;
-        margin-top: 20px;
+        margin-top: 30px;
         position: relative;
         top: -40px;
-        line-height: 2px;
+        line-height: 5vw;
+        text-align: center;
     }
     #map {
         width: 90%;
